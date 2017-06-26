@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class GreetingSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(GreetingSeeder::class);
-        // $this->call(UsersTableSeeder::class);
+        Greeting::create([
+            "body" => "Hello World"
+        ]);
     }
 }
