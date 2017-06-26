@@ -18,7 +18,7 @@
 // Route::get('/', 'WelcomeController@index');
 
 Route::get('/', function() {
-    return Greeting::first()->body;
+    return \App\Greeting::first()->body;
 });
 
 
